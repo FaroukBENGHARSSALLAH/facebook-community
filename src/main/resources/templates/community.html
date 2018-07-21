@@ -98,7 +98,7 @@
         	 if(list[i].latitude){
 
 			            marker = new google.maps.Marker();
-						marker.setPosition(new google.maps.LatLng(47.3732589, 8.2382168));
+						marker.setPosition(new google.maps.LatLng(list[i].latitude, list[i].longitude));
 						marker.setTitle(list[i].name);
 						marker.setMap(map);
 			            html = list[i].name;
