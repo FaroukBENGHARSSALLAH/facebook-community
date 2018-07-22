@@ -16,4 +16,4 @@ Dev Technologies
 - [x] Google Maps
 - [x] Spring themeleaf
 
-     You can visit the live version via [facebook-community](http://http://facebook-community.herokuapp.com//).
+     You can visit the live version via [facebook-community](https://facebook-community.herokuapp.com/).
