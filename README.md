@@ -1,7 +1,7 @@
 # facebook-community
 Facebook Developer Circles Community Challenge 2018 source code
 
-This folder contains the website's source code. The project provide a panel to regroupe supporters arround an issue, using Facebook account as a signature for membership
+This folder contains the website's source code. The project provides a panel to regroupe supporters arround an issue, using Facebook account as a signature for membership
 
 ###### Features
 - [x] login page
