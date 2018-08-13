@@ -42,7 +42,7 @@ public class FacebookController extends ConnectController {
         super.setViewPath("/connect");
         
            // set redirect URL
-        super.setApplicationUrl("https://facebook-community.herokuapp.com/facebook");
+       // super.setApplicationUrl("https://facebook-community.herokuapp.com/facebook");
     }
 
 
