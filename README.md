@@ -1,7 +1,15 @@
 # facebook-community
 Facebook Developer Circles Community Challenge 2018 source code
 
-This folder contains the website's source code.
+This folder contains the website's source code. The project provide a panel to regroupe supportes arround an issue, using Facebook account as a signature for membership
+
+###### Features
+- [x] login page
+- [x] welcome and message page
+- [x] Supporters message with thier position in a Map
+- [ ] Supporters mail list display
+- [ ] Supporters gender list display
+- [ ] Supporters data dashbord
 
    You can visit the live version via [facebook-community](https://facebook-community.herokuapp.com/).
 
@@ -21,7 +29,7 @@ Dev Technologies
 
      You can visit the live version via [facebook-community](https://facebook-community.herokuapp.com/).
      
-You can uses these test users
+You can use these test users
 
 ```
 email : user_ybrgayz_one@tfbnw.net    password : user_one
@@ -40,20 +48,20 @@ email : user_ouzlphr_five@tfbnw.net    password : user_five
   
   > Build in localhost
   
-1. import the project
-2. update `application.properties file` with your own tokens provided by Your Facebook App
-3. build using maven from the prject root directory 
+. import the project
+. update `application.properties file` with your own tokens provided by Your Facebook App
+. build using maven from the prject root directory 
 ```
 maven clean install
 ```
 
-4. copy the war file from the target folder to your server webapp folder, like Tomcat server
-5. open this link in the web browser `http://localhost:8081/`
-6. Test the website, you can add test users from the facebook app
+. copy the war file from the target folder to your server webapp folder, like Tomcat server
+. open this link in the web browser `http://localhost:8081/`
+. Test the website, you can add test users from the facebook app
 
    > Build to deploy in the cloud
    
-1. add your domain name in the facebook App's domains list
-2. configure your redirect URL, it has to be in this format `https://YOUR DOMAIN NAME/facebook` in the facebook APP
-3. uncomment the line `45` in `FacebookController.java` in the folder `src/main/java/com/facebook/community/controller/` and set the   `ApplicationUrl` to redirect URL 
-6. Test the website, you can use the test users added in the facebook app
+. add your domain name in the facebook App's domains list
+. configure your redirect URL, it has to be in this format `https://YOUR DOMAIN NAME/facebook` in the facebook APP
+. uncomment the line `45` in `FacebookController.java` in the folder `src/main/java/com/facebook/community/controller/` and set the   `ApplicationUrl` to redirect URL 
+. Test the website, you can use the test users added in the facebook app
