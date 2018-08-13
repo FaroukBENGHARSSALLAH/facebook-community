@@ -1,7 +1,7 @@
 # facebook-community
 Facebook Developer Circles Community Challenge 2018 source code
 
-This folder contains the website's source code. The project provide a panel to regroupe supportes arround an issue, using Facebook account as a signature for membership
+This folder contains the website's source code. The project provide a panel to regroupe supporters arround an issue, using Facebook account as a signature for membership
 
 ###### Features
 - [x] login page
@@ -48,20 +48,22 @@ email : user_ouzlphr_five@tfbnw.net    password : user_five
   
   > Build in localhost
   
-. import the project
-. update `application.properties file` with your own tokens provided by Your Facebook App
-. build using maven from the prject root directory 
+- import the project
+- update `application.properties file` with your own tokens provided by Your Facebook App
+- build using maven from the prject root directory 
 ```
 maven clean install
 ```
 
-. copy the war file from the target folder to your server webapp folder, like Tomcat server
-. open this link in the web browser `http://localhost:8081/`
-. Test the website, you can add test users from the facebook app
+- copy the war file from the target folder to your server webapp folder, like Tomcat server
+- open this link in the web browser `http://localhost:8080/`
+- Test the website, you can add test users from the facebook app
+- Verify data integrity in the database by visiting the H2 web console from this link `http://localhost:8080/database`
 
    > Build to deploy in the cloud
    
-. add your domain name in the facebook App's domains list
-. configure your redirect URL, it has to be in this format `https://YOUR DOMAIN NAME/facebook` in the facebook APP
+- add your domain name in the facebook App's domains list, be sure it uses the SSL certificate or create your certificate
+- configure your redirect URL, it has to be in this format `https://YOUR DOMAIN NAME/facebook` in the facebook APP
 . uncomment the line `45` in `FacebookController.java` in the folder `src/main/java/com/facebook/community/controller/` and set the   `ApplicationUrl` to redirect URL 
-. Test the website, you can use the test users added in the facebook app
+- Test the website, you can use the test users added in the facebook app
+- Verify data integrity in the database by visiting H2 web console from this link `https://YOUR DOMAIN NAME/database`
